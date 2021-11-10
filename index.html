@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <script type="text/javascript" src="calculator.js"> </script>
+
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class= "display">
+          <form name = "form1">
+          <input class= "textview" name = "textview">
+          </form>
+          
+          <!-- the input -->
+         
+        
+          <!-- the buttons -->
+          <div class="calculator-buttons">
+
+        
+            <button class="calc-button"  value ="7" onclick="number('7')">7</button>
+            <button class="calc-button"  value ="8" onclick="number('8')">8</button>
+            <button class="calc-button"  value ="9" onclick="number('9')">9</button>
+            <button class="calc-button is-clear" value="C" onclick = "form1.textview.value = ' '"> C </button>
+        
+            <button class="calc-button" value ="4" onclick="number('4')">4</button>
+            <button class="calc-button" value ="5" onclick="number('5')">5</button>
+            <button class="calc-button" value ="6" onclick="number('6')">6</button>
+            <button class="calc-button" value ="-" onclick="number('-')">&minus;</button>
+        
+            <button class="calc-button" value ="1" onclick="number('1')">1</button>
+            <button class="calc-button" value ="2" onclick="number('2')">2</button>
+            <button class="calc-button" value ="3" onclick="number('3')">3</button>
+            <button class="calc-button" value ="+" onclick="number('+')">&plus;</button>
+        
+            <button class="calc-button is-zero" value ="0" onclick="insert('0')">0</button>
+            <button class="calc-button is-equals" value = "=" onclick="equal('=')">&equals;</button>
+            <button class="calc-button"  value ="*"  onclick="number('*')">&times;</button>
+            <button class="calc-button"  value ="/" onclick="number('/')">&divide;</button>
+          </div>
+          
+        </div>
+</body>
+</html>
